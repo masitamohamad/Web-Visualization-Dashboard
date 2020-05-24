@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Web Visualization Dashboard</title>
+  
+  <!-- Point HTML to the CSS file -->
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="additional_style.css">
+</head>
+
+<body>
+
+  <!-- Add a Bootstrap component: Navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="index.html"><h3>Latitude</h3></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+          <div class="dropdown-menu" style="">
+            <a class="dropdown-item" href="max_temperature.html">Max Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="comparison.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+  
+  <!-- Create overall Grid -->
+
+  <div class="container">
+      
+    <!-- First Row -->
+    <div class="row"> 
+
+      <!--First of two columns: This is full wide on a small screen screen, the first row is 2/3 wide on large screen-->
+       <div class="col-sm-12 col-lg-8">
+        <div class="box">
+          <h3><strong>Humidity</strong></h3>
+          <hr class="my-4">
+          <img src="assets/images/Fig2.png" class="img-fluid">
+            <br>
+          <p>There is moderate positive relationship between latitude and humidity (R-squared value ~0.15-0.28). In both Northern and Southern hemisphere, the increase in latitude leads to the increase in humidity as a humid, tropical climate can be found near the equator (Latitude = 0).</p>
+          <div class="row">
+            <div class="col-lg-6 col-sm-6">
+              <img src="assets/images/Fig2a.png" class="img-fluid" alt="Northern Hemisphere">
+          </div>
+          <div class="col-lg-6 col-sm-6">
+              <img src="assets/images/Fig2b.png" class="img-fluid" alt="Southern Hemisphere">
+           </div>
+          </div>
+       
+        </div>   
+       </div>
+
+      <!--Second of Two Columns-->
+       <div class="col-sm-12 col-lg-4">
+        <div class="box">
+        <!-- First Row -->
+          <div class="row">
+            <div class="col-md-12">
+              <h4>Visualizations</h4>
+              <hr>
+            </div>
+          </div>
+       
+        <!-- Second Row of Second Column-->
+         <div class="row">
+  
+            <div class="col-lg-6 col-sm-3">
+               <a href="max_temperature.html"><img src="assets/images/Fig1.png" class="img-fluid" alt="Temperature"></a>
+            </div>
+            <div class="col-lg-6 col-sm-3">  
+                <div class="divborder"> 
+                <a href="humidity.html"><img src="assets/images/Fig2.png" class="img-fluid" alt="Humidity"></a>
+                </div>  
+            </div>
+            <div class="col-lg-6 col-sm-3">  
+              <a href="cloudiness.html"><img src="assets/images/Fig3.png" class="img-fluid"alt="Cloudiness"></a>
+            </div>
+            <div class="col-lg-6 col-sm-3">     
+              <a href="wind_speed.html"><img src="assets/images/Fig4.png" class="img-fluid"alt="Wind Speed"></a>
+            </div>
+          </div>             
+      </div>
+    </div>      
+  </div>	 	
+
+<!--These are <script>s from Bootstrap website. Many BS components require the use of JavaScript to function -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
